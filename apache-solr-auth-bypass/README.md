@@ -1,4 +1,4 @@
-# apache-solr-auth-bypass
+# ~~apache-solr-auth-bypass~~
 ## 环境搭建
 ```javascript
 docker pull solr:8.8
