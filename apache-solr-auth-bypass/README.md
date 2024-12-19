@@ -7,7 +7,7 @@ docker exec -it solr8 bash // 前端新增core失败
 solr create_core -c new_core -d _default // 进后台添加
 ```
 
-## 登录绕过环境搞不定，改复现文件读取>_< ~~CVE-2024-45216漏洞利用~~
+## 身份验证绕过环境搞不定，改复现文件读取>_< ~~CVE-2024-45216漏洞利用~~
 core name
 ![img01](./images/img01.png)
 开启Remote Streaming
