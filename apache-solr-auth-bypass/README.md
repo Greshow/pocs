@@ -1,6 +1,6 @@
 # apache-solr-auth-bypass
 ## 环境搭建
-用dcoker搭建，配置文件在f1.zip中，服务运行后访问http://127.0.0.1:8983/（账号密码solr/SolrRocks），new collection
+用dcoker搭建，配置文件在f1.zip中，服务运行后访问[http://127.0.0.1:8983/](http://127.0.0.1:8983/)（账号密码solr/SolrRocks），new collection
 
 ## CVE-2024-45216漏洞利用
 正常访问401
