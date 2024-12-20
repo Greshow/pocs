@@ -1,11 +1,6 @@
 # apache-solr-auth-bypass
 ## 环境搭建
-经验不足踩坑太多，具体不写了，总结就是docker用zookeeper1.4.14和solr8.8，solr多开一个端口用来搭建集群。
-进容器
-```javascript
-solr zk cp ./security.json zk:security.json -z zookeeper:2181 // security.json用官方给的模板
-solr start -c -m 1g -z zookeeper:2181 -p 8985 // 手动开cloud
-```
+用dcoker搭建，配置文件在f1.zip中，服务运行后访问http://127.0.0.1:8983/（账号密码solr/SolrRocks），new collection
 
 ## CVE-2024-45216漏洞利用
 正常访问401
