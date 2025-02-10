@@ -12,4 +12,4 @@ expression: r0()
 detail:
     author: Greshow
     links:
-        - https://github.com/Greshow/pocs/blob/main/wordpress-umbrella-lfi/
+        - https://github.com/Greshow/pocs/blob/main/wordpress-umbrella-lfi/README.md
