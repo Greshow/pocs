@@ -1,6 +1,6 @@
 # zzcms-sqli
 ## CVE-2025-0565复现过程
-定位到sql代码
+定位到sql代码，上方是通过$_REQUEST获取的id，而inc/global.php只做了cookie/get/post的转义
 ![img01](./images/img01.png)
 query函数没有对数据进行处理直接执行
 ![img02](./images/img02.png)
