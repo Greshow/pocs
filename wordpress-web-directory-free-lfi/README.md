@@ -1,5 +1,4 @@
-# wordpress-web-directory-free-lfi
-CVE-2024-3673漏洞利用
+# wordpress-web-directory-free-lfi(CVE-2024-3673漏洞利用)
 include在w2dc_renderTemplate函数被利用
 ![img01](./images/img01.png)
 w2dc_renderTemplate函数通过w2dc_frontend_controller类的display方法调用
