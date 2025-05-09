@@ -1,2 +1,2 @@
-## 由本人发现，暂无编号，暂不公开
+## wordpress-gutentor-sqli(CVE-2025-1986)
 需要edit_posts权限
